@@ -42,10 +42,10 @@ php bin/console doctrine:migrations:migrate
 ```
 Now you will be able to see tables in mysql database.
 
-- ####Apply Vendor Certificates and Keys
+- Apply Vendor Certificates and Keys
 -- You need to paste **certificate.pem** and** privatekey.key** file in **certificates** directory in project root.  You can obtain these files from the development team .
 
-- ####Apply Vendor Client Credentials
+- Apply Vendor Client Credentials
  -- You need to add Vendor client credentials and certificate path in database fixture .
 ```php
 # src/DataFixtures/VendorFixtures.php
