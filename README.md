@@ -66,6 +66,21 @@ Now you will be able to see tables in mysql database.
 ```javascript
 php bin/console doctrine:fixtures:load
 ```
+- If you are deploying application on local machine you may need to add host for vendor for the OAuth Callbacks.
+```javascript
+sudo nano /etc/hosts
+```
+- Paste the following lines at the end of the file.
+
+```javascript
+127.0.0.1       1.ttconnector.staffr.com 
+```
+- Save the file and exit.
+1.ttconnector.staffr.com is also a whitelisted callback url against vendor . You can replace it with your own callback host/url.
 Now you run the connector application by going to
-https://localhost/{{vendor}}/connect
+https://1.ttconnector.staffr.com/{{vendor}}/connect
+
+OR
+{{APPLICATION_HOST_ADDRESS}}/{{vendor}}/connect
+
 
